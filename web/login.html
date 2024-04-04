@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login ComPuter Shop</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/logo.webp" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d6052cb9ef.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: calc(100% - 40px);
+                padding: 10px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+
+
+            input[type="submit"],
+            input[type="reset"] {
+                background-color: #4caf50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-top: 10px;
+                clear: both;
+            }
+
+            input[type="submit"]:hover,
+            input[type="reset"]:hover {
+                background-color: red;
+            }
+            .loginWithGG a:hover{color: red}
+            #register:hover{
+                color: red
+            }
+            .loginWithGG{
+                margin-top: 10px;
+            }
+            .forgot:hover{
+                color: red
+            }
+        </style>
+    </head>
+    <body>
+        <h1><b>Login Computer Shop</b></h1>
+        <form action="DispatchServlet" method="post">
+            Username: <input type="text" name="txtUsername" value="" /><br>
+            Password:     
+            <input type="password" name="txtPassword" id="password" value="" /></br>
+            <input class="toggle-password" type="checkbox" onclick="togglePasswordVisibility()" /> Show Password </br>
+            <div class="loginWithGG">
+                <a  href="https://accounts.google.com/o/oauth2/auth?scope=profile&redirect_uri=http://localhost:8084/Shopping_2_12_1_2/LoginGoogleHandler&response_type=code&client_id=614661063333-sda7f7jg798j49pligdqni6j122cp4h9.apps.googleusercontent.com&approval_prompt=force" class="btn bt-primary">
+                    <i class="fab fa-google"></i> Login With Google
+                </a>
+            </div>
+            <p>Forgot Password &nbsp;<a href="ForgotPassword.jsp" class="forgot">click here</a></p>
+            <p>Don't have an account? <a href="register.jsp" id="register">Register here</a></p>
+            <input type="submit" name="btSubmit" value="Login"/>
+            <input type="reset" value="Reset"/>
+        </form>
+
+        <script>
+            function togglePasswordVisibility() {
+                var passwordInput = document.getElementById('password');
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                } else {
+                    passwordInput.type = 'password';
+                }
+            }
+        </script>
+    </body>
+</html>
