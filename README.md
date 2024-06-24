@@ -1,5 +1,6 @@
-# text readme
+# Project ComputerShop
 
-# Line2
+## Use jsp servlet, login with google, forgot password verify email, send order to email, add to cart, ajax, VNpay.....
 
-![topdev](https://png.pngtree.com/thumb_back/fh260/background/20230511/pngtree-nature-background-sunset-wallpaer-with-beautiful-flower-farms-image_2592160.jpg)
+
+![topdev](https://storageimageazure.blob.core.windows.net/productcontainer/daquy1.jpg)
