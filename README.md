@@ -4,6 +4,5 @@
 
 
 ![topdev](https://storageimageazure.blob.core.windows.net/avatar/1.jpg)
-![topdev]((https://storageimageazure.blob.core.windows.net/avatar/2.jpg)
 ![topdev](https://storageimageazure.blob.core.windows.net/avatar/3.jpg)
 
