@@ -4,5 +4,5 @@
 
 
 ![Just a fun gif](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
-![My Image](images/1.png)
+![My Image](images/1.ipg)
 
